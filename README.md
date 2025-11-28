@@ -2,7 +2,7 @@
 This script extracts all opf images from one directory scanning recursively all of the directory tree
 
 
-##Cosa fa esattamente?
+##What it does
 
 find "$SRC_DIR" → scansiona tutte le sottocartelle.
 
@@ -13,3 +13,7 @@ find "$SRC_DIR" → scansiona tutte le sottocartelle.
 ! -iname "*x*" → esclude file che contengono “x” nel nome (maiuscole/minuscole non contano).
 
 -exec cp {} "$DEST_DIR" \; → copia i file selezionati.
+
+##How to use it
+
+bash images_extractor.sh /source/directory /destination/directory
